@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8F4E1;
+}
+
+a {
+    text-decoration: none;
+}
+/*------------- navigation bar ---------- */
+.container-Navbar{
+    display: flex;
+    align-items:center; /* Center items vertically */
+    justify-content: space-between;
+    padding: 0px 30px;
+    
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.choices p{
+    padding-right: 10px;
+    padding-left: 60px;
+    margin-right: 10px;
+    color: #543310;
+    cursor: pointer; /* Add cursor pointer to indicate clickable items */
+    transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.choices p:hover {
+    color: #AA712C; /* Change color on hover */
+}
+
+.logo{
+    flex: 0 0 auto; 
+}
+
+.logo img{ 
+    padding-left: 30px;
+}
+
+.call a{
+    padding: 10px 30px;
+    border-radius: 100px;
+    background-color: #543310;
+    color:#F8F4E1;
+    cursor: pointer; /* Add cursor pointer to indicate clickable item */
+    transition: background-color 0.3s ease; /* Smooth transition for background color changes */
+
+}
+
+.call a:hover {
+    background-color: #AA712C; /* Change background color on hover */
+}
+
+/*------------- navigation bar ---------- */
