@@ -1,64 +1,125 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #F8F4E1;
-}
-
-a {
     text-decoration: none;
-}
-/*------------- navigation bar ---------- */
-.container-Navbar{
-    display: flex;
-    align-items:center; /* Center items vertically */
-    justify-content: space-between;
-    padding: 0px 30px;
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
-.choices {
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background-color: antiquewhite;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+
+.divNavbar {
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-}
-
-.choices p{
-    padding-right: 10px;
-    padding-left: 60px;
-    margin-right: 10px;
-    color: #543310;
-    cursor: pointer; /* Add cursor pointer to indicate clickable items */
-    transition: color 0.3s ease; /* Smooth transition for color changes */
-}
-
-.choices p:hover {
-    color: #AA712C; /* Change color on hover */
+    justify-content: space-between;
 }
 
 .logo{
-    flex: 0 0 auto; 
+    padding-left: 50px;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 50px;
+    color:#543310;
+}
+li{
+    display: inline-block;
 }
 
-.logo img{ 
-    padding-left: 30px;
-}
 
-.call a{
-    padding: 10px 30px;
+li a{
+    color: #543310;
+    padding-right: 30px;
+    display: flex;
+    font-size: 17px;
+    font-weight: bold;
+    transition: color 0.3s ease;   
+}
+li a:hover{
+    color: #102C57;
+}
+.navBTN{
+    background-color:antiquewhite;
+    padding: 8px 30px;
+    border: 2px solid #543310; 
     border-radius: 100px;
+    margin-left: 455px;
+    margin-right: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.navBTN:hover{
     background-color: #543310;
-    color:#F8F4E1;
-    cursor: pointer; /* Add cursor pointer to indicate clickable item */
-    transition: background-color 0.3s ease; /* Smooth transition for background color changes */
+}
+
+.navBTN a{
+    color:  #543310;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  
+}
+.navBTN:hover a{
+    color: antiquewhite;
+}
+
+
+/* home */
+
+.divHome{
+    padding-top: -5px; /* Adjust padding to accommodate fixed navbar */
+    margin-top: 0px; /* Example margin */
+}
+.divHome video {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 
 }
 
-.call a:hover {
-    background-color: #AA712C; /* Change background color on hover */
+.homeBTN a {
+    position: absolute;
+    top: 115%; /* Adjust top positioning */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensure button is above video */
+    background-color: transparent;
+    padding: 10px 30px;
+    color: antiquewhite;
+    font-weight: bold;
+    border: 2px solid antiquewhite;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color .3s ease, color .3s ease;
 }
 
-/*------------- navigation bar ---------- */
+
+.homeBTN:hover a{
+    background-color: antiquewhite;
+    color: #543310;
+}
+
+#idAbout{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 50% 
+}
+
+.divMsg{
+    margin-top: 20%;
+    font-size: xx-large;
+}

@@ -7,36 +7,38 @@
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-    <div class="container-Navbar">
-        <div class="logo">
-            <img src="images/Untitled design.png" height="120 px">
+    <!-- navigation bar -->
+    <!-- <nav> for nafigation links -->
+    <nav class="navbar">  
+        <div class="divNavbar">
+            <div class="logo">
+                <a href="#">HER.</a>
+            </div>
+            <ul>
+                <li><a href = "#idHome"> Home </a></li>
+                <li><a href = "#idAbout"> Projects </a></li>
+                <li><a href = "https://github.com/gettieCode" target="_blank"> GitHub </a></li>
+                <button class="navBTN"><a href = "https://www.facebook.com/profile.php?id=100091291392816" target ="_blank"> Contact HER </a></button>
+            </ul>
         </div>
-        <div class = "choices">
-                <p>Home</p>
-                <p>More</p>
-                <p>Inspire</p>
+
+        
+    </nav>
+    <!-- end of navigation bar -->
+    <!-- home-->
+    <section id="idHome">  
+            <button class="homeBTN"><a href = "#idAbout">See More</a></button>
+        <div class="divHome">
+            <video src="images/home.mp4" muted autoplay loop></video>
         </div>
-        <div class = "call">
-            <a href="https://www.facebook.com/profile.php?id=100091291392816" target = "_blank" rel="noopener noreferrer">Contact HER</a>
+    </section>
+    <!-- end of home -->
+    <!-- about and projects -->
+    <section id="idAbout">  
+        <div class="divMsg">
+            <h1>I am HER.</h1>
+            <p>A freelance graphic designer. Currently, I am focusing on honing my skills in Web Development. I aim to be a Web Developer in the future</p>
         </div>
-    </div>
-
-<!-- welcome  -->
-    <div id="Welcome">
-        <h1></h1>
-    </div>
-
-<!-- random information -->
-    <div id="RandomInfo">
-    </div>
-
-<!-- qoute -->
-    <div id="Quote">
-    </div>
-
-<!-- call to action -->
-    <div id="CalltoAction">
-    </div> 
-
+    </section>
 </body>
 </html>
