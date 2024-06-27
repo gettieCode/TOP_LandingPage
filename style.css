@@ -78,8 +78,8 @@ li a:hover{
 /* home */
 
 .divHome{
-    padding-top: -5px; /* Adjust padding to accommodate fixed navbar */
-    margin-top: 0px; /* Example margin */
+    padding-top: -20px; /* Adjust padding to accommodate fixed navbar */
+    margin-top: -20px; /* Example margin */
 }
 .divHome video {
     position: absolute;
@@ -113,13 +113,91 @@ li a:hover{
 
 #idAbout{
     position: relative;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: flex-end;
-    margin-top: 50% 
+    margin-top: 60% 
 }
 
 .divMsg{
-    margin-top: 20%;
+    margin-top: 10%;
+    padding: 0px;
+}
+.divMsg h1{
+    color: #543310;
+    font-size: 60px;
+    text-align: center;
+
+}
+
+.divMsg p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    color:rgb(195, 182, 166);
+}
+
+/* mine */
+.divServices{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.service li {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+.service li:hover {
+    transform: scale(1.1);
+}   
+.service img{
+    width: 450px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5%;
+    
+}
+
+.serviceText{
+    text-align: center;
+    font-weight:700;
+    color: #543310;
+}
+
+#lastSect{
+    background-color: antiquewhite;
+    text-align: center;
     font-size: xx-large;
+    font-weight: bolder;
+    padding: 100px;
+    color: #543310;
+
+}
+
+#lastSect p, #lastSect footer{
+    color: #957450;
+    font-weight: normal;
+    font-size: medium;
+    padding: 20px 40px;
+}
+
+#lastSect .navBTN{
+    display: flex;
+    justify-content: center;
+    margin-left: 630px;
 }
